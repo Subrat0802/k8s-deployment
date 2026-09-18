@@ -65,7 +65,7 @@ function App() {
   }, []);
 
   return (
-    <div className="bg-black min-h-screen w-full text-white p-10">
+    <div className=" min-h-screen w-full text-white p-10 ">
 
       <h1 className="font-bold text-4xl mb-10">
         Subrat Mishra
@@ -74,21 +74,21 @@ function App() {
       {/* CREATE TODO */}
       <form
         onSubmit={createTodo}
-        className="max-w-md mx-auto mb-10 flex flex-col gap-4"
+        className="max-w-md mx-auto mb-10 flex flex-col gap-4 bg-gray-300 "
       >
         <input
           type="text"
           placeholder="Todo title"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
-          className="p-3 text-black rounded"
+          className="p-3 text-black rounded bg-white"
         />
 
         <textarea
           placeholder="Todo description"
           value={description}
           onChange={(e) => setDescription(e.target.value)}
-          className="p-3 text-black rounded"
+          className="p-3 text-red-700 font-bold rounded bg-white"
         />
 
         <button
